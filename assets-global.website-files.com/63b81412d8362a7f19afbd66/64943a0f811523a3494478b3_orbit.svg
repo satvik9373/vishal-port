@@ -1,0 +1,37 @@
+<svg width="326" height="180" viewBox="-10 0 346 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @keyframes strokeanim {
+            from { stroke-dashoffset: -10000px; }
+        }
+
+        @keyframes star1FadeIn {
+            to { opacity: 1; }
+        }
+        path#orbit-1 {
+            animation: strokeanim 1000s linear infinite;
+            <!-- animation-direction: reverse; -->
+            animation-fill-mode: forwards;
+        }
+
+        path#star-1 {
+            opacity: 0;
+            animation: star1FadeIn 250ms linear;
+            animation-fill-mode: forwards;
+            animation-delay: .3s;
+        }
+    </style>
+    <path id="orbit-1" d="M173.283 114.907C257.186 79.066 320.42 38.8156 314.521 25.0054C308.622 11.1952 235.822 29.0548 151.92 64.8959C68.0167 100.737 4.78238 140.987 10.6817 154.798C16.5811 168.608 89.3802 150.748 173.283 114.907Z" stroke="url(#paint0_linear_1295_937)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 7" stroke-dashoffset="0"/>
+    <path id="star-1" d="M93.704 102.388C93.7027 100.952 93.9844 99.5295 94.5331 98.2023C95.0818 96.875 95.8867 95.6689 96.9018 94.6529C97.9169 93.6369 99.1222 92.8309 100.449 92.281C101.776 91.7311 103.198 91.4481 104.634 91.4481C101.735 91.4481 98.9551 90.2965 96.9053 88.2467C94.8556 86.197 93.704 83.4169 93.704 80.5181C93.704 83.4134 92.5552 86.1905 90.5098 88.2397C88.4643 90.2889 85.6894 91.4428 82.794 91.4481C85.6903 91.456 88.4652 92.6121 90.5104 94.6629C92.5555 96.7137 93.704 99.4918 93.704 102.388Z" fill="#EFEBE3" stroke="#EFEBE3" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-100px, -89px)">
+        <animateMotion begin="0s" dur="15s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear">
+            <mpath href="#orbit-1"/>
+        </animateMotion>
+    </path>
+    <defs>
+        <linearGradient id="paint0_linear_1295_937" x1="-4.53547" y1="71.0952" x2="316.721" y2="135.254" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0"/>
+            <stop offset="0.505108" stop-color="white"/>
+            <stop offset="0.505208" stop-color="white"/>
+            <stop offset="1" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+</svg>
